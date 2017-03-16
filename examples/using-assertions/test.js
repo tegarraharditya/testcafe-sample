@@ -25,7 +25,7 @@ const page = new Page();
 test('Use different assertion types', async t => {
     await t
         .typeText(page.nameInput, 'Peter Parker')
-        .expect(page.nameInput.value).contains('Peter')
+        .expect(page.nameInput.value).contains('Peterx')
         .expect(page.nameInput.value).notContains('Potter')
 
         .expect(page.checkboxes.count).gte(6, 'there are at least six checkboxes on the page')
